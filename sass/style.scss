@@ -1,0 +1,82 @@
+//var
+$font__menu-box:'Montserrat', sans-serif;
+$font__menu-name:'Great Vibes', cursive;
+$font-color__menu-box: white;
+$font-color__menu-name: gold;
+
+//global
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+  
+}
+
+//nav
+.nav{
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url("/images/header.png");
+}
+.nav__menu {
+  width: 1400px;
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.nav__menu-name {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  font-size: 38px;
+  text-decoration: none;
+  margin-top: 30px;
+  a{
+    text-decoration: none;
+    font-family:$font__menu-name;
+    color:$font-color__menu-name;
+  }
+}
+
+.nav__menu-box {
+ margin-top: 50px;
+}
+
+.nav__box-li {
+  list-style-type: none;
+  display: inline-block;
+  width: 105px;
+  text-align: end;
+
+}
+
+.nav__box-a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: $font__menu-box;
+  // font-weight: bold;
+  color: $font-color__menu-box;
+}
+
+.nav__box-li:first-child {
+  // width: 100px;
+}
+
+
+
+
+
+
+
+//header
+//services
+//portfolio
+//footer

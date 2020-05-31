@@ -10,26 +10,27 @@
 }
 
 .nav {
-  width: 1400px;
-  height: 700px;
-  margin: 0 auto;
   background-image: url("/images/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav__menu {
-  width: 1400px;
+  position: relative;
+  -webkit-backdrop-filter: opacity(0.4);
+          backdrop-filter: opacity(0.4);
+  max-width: 1400px;
   height: 700px;
+  margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  position: relative;
+  position: a;
 }
 
 .nav__menu-name {
-  width: 100px;
   position: absolute;
-  left: 0;
+  width: 100px;
+  left: 17%;
   font-size: 38px;
   text-decoration: none;
   margin-top: 30px;
@@ -42,7 +43,9 @@
 }
 
 .nav__menu-box {
-  margin-top: 50px;
+  margin-top: 53px;
+  position: absolute;
+  left: 45%;
 }
 
 .nav__box-li {
@@ -57,5 +60,98 @@
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+.nav__box-ham {
+  position: absolute;
+  display: none;
+  right: 20px;
+  top: 30px;
+}
+
+.nav__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  min-width: 900px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: white;
+}
+
+.nav__title h4 {
+  font-size: 42px;
+  font-family: 'Bentham', serif;
+  font-weight: lighter;
+}
+
+.nav__title h1 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+
+.nav__btn {
+  text-align: center;
+  margin-top: 48px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 50px;
+  background-color: gold;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  min-width: 200px;
+  width: 250px;
+}
+
+@media (max-width: 992px) {
+  .nav__menu-name {
+    margin-left: 20px;
+    left: 4%;
+  }
+  .nav__menu-box {
+    display: none;
+  }
+  .nav__title h4 {
+    font-size: 32px;
+  }
+  .nav__title h1 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .nav__btn {
+    font-size: 16px;
+  }
+  .nav__box-ham {
+    display: block;
+  }
+  .nav__box-ham:hover .nav__menu-name .nav__box-li {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav__title {
+    min-width: 300px;
+  }
+  .nav__title h4 {
+    font-size: 22px;
+  }
+  .nav__title h1 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  .nav__btn {
+    font-size: 14px;
+    max-width: 100px;
+    padding: 20px 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

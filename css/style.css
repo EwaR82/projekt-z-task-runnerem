@@ -28,7 +28,6 @@ section {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  position: a;
 }
 
 .nav__menu-name {
@@ -129,18 +128,22 @@ section {
   font-size: 18px;
   padding: 20px 50px;
   background-color: gold;
-  border-radius: 3px;
+  border-radius: 4px;
   color: white;
   font-weight: bold;
   min-width: 200px;
   width: 250px;
 }
 
+.nav__btn:hover {
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
 .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 300px);
+  -ms-grid-columns: (310px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 310px);
   -ms-flex-pack: center;
       justify-content: center;
   margin-top: 28px;
@@ -180,6 +183,7 @@ section {
   margin-top: 14px;
   padding: 0 10px;
   color: #757575;
+  font-family: "Montserrat", sans-serif;
 }
 
 .portfolio__bg {
@@ -203,6 +207,8 @@ section {
 
 .portfolio__subtitle {
   color: #757575;
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .portfolio {
@@ -223,9 +229,9 @@ section {
 
 .portfolio__box h1 {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
-  font-family: white;
+  font-family: "Montserrat", sans-serif;
   padding-top: 20px;
   font-weight: bold;
 }
@@ -236,8 +242,12 @@ section {
   color: #757575;
 }
 
-.portfolio__box .a:hover .img {
-  scale: 1.2, 1.2;
+.portfolio__box img {
+  transition: all 0.6s;
+}
+
+.portfolio__box img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .footer {
@@ -248,6 +258,7 @@ section {
 .footer h1 {
   position: absolute;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
   color: #757575;
   font-size: 14px;
   padding-top: -54px;
@@ -261,13 +272,21 @@ section {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -20%);
 }
 
 .footer__list li {
   display: inline;
   list-style-type: none;
-  padding-top: 0px;
+  padding: 0px 5px;
+}
+
+.footer__list img {
+  transition: all 0.6s;
+}
+
+.footer__list img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 @media (max-width: 992px) {
